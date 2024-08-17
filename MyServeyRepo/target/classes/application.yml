@@ -1,0 +1,21 @@
+server:
+  port: 8084
+spring:
+  application:
+    name: userService
+  datasource:
+    url: jdbc:mysql://localhost:3306/pilot
+    username: root
+    password: pass@word1
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      show-sql: true
+
+#spring.datasource.url=jdbc:h2:mem:testdb
+#spring.datasource.driverClassName=org.h2.Driver
+#spring.datasource.username=sa
+#spring.datasource.password=password
+#spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
